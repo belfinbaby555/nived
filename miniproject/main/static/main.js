@@ -7,7 +7,7 @@ function searchplace(){
 
    console.log(place, date, type, people, star);
 
-   fetch("http://127.0.0.1:8000/search/None/None/None/None/5/")
+   fetch("http://127.0.0.1:8000/search/"+place+"/"+date+"/"+people+"/"+type+"/"+star+"/")
    .then((res)=>(res.json()))
    .then((json)=>{
     
