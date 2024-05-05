@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0'>
+        <link href='https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap' rel='stylesheet'>
+        <link rel='stylesheet' href='/static/style.css'>
+        
+        <script src='/static/main.js'></script>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='search'>
+                <div class='top'><h2>Travel<b>Mate</b></h2></div>
+                <div class='search_box'>
+                    <h3><b>Find</b> Place</h3>
+                    <input type='text' placeholder='Type place 'Kannur' ' id='place'/>
+                    <input type='date' placeholder='date ' id='date'/>
+                    <select id='type'>
+                        <option value=''>Select the Type of </option>
+                        <option value='Travel'>Travel</option>
+                        <option value='Hotel'>Hotel</option>
+                        <option value='Place'>Place</option>
+                    </select>
+                    <select id='people'>
+                        <option value=''>Select Group Type</option>
+                        <option value='Individual'>Individual</option>
+                        <option value='Couple'>Couple</option>
+                        <option value='Family'>Family</option>
+                    </select>
+                    <input type='number' placeholder='Type Star Rating '5'' id='season' maxlength='5'/>
+                    <button onclick='searchplace()'>Search</button>
+                </div>
+            </div>
+            <div class='out'>
+                <h1><b>Explore</b> the world with us<b>.</b></h1>
+                <h4>Popular Places</h4>
+                <div class='cards' id='cards'>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
